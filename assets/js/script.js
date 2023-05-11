@@ -22,6 +22,7 @@ navLinks.forEach((link) => {
     navLinks.forEach((link) => link.classList.remove("active"));
 
     this.classList.add("active");
+    navbar.classList.toggle("active");
   });
 });
 navLinks[0].classList.add("active");
@@ -30,10 +31,10 @@ navLinks[0].classList.add("active");
 // typed js home section
 var typed = new Typed("#typed", {
   strings: ["Frontend Developer", "Graphic Designer"],
-  typeSpeed: 80,
+  typeSpeed: 50,
   backSpeed: 50,
-  backDelay: 800,
-  startDelay: 500,
+  backDelay: 200,
+  startDelay: 100,
   fadeOut: false,
   loop: true,
 });
